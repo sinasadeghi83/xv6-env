@@ -1,7 +1,7 @@
 # Docker image for building/running xv6-riscv
 # Takuo Watanabe (Tokyo Institute of Technology)
 
-FROM ubuntu as opfsbuilder
+FROM ubuntu AS opfsbuilder
 WORKDIR /root/
 RUN apt-get update \
  && apt-get install -y git build-essential \
