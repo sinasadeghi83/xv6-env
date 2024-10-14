@@ -9,15 +9,15 @@ You can obtain it using the following command (Skip this step if you already hav
 $ git clone https://github.com/mit-pdos/xv6-riscv.git
 ```
 
-The image is available on [Docker Hub](https://hub.docker.com/r/wtakuo/xv6-env).
+The image is available on [Docker Hub](https://hub.docker.com/r/sinasasdeghi83/xv6-env).
 You can start a new container with the command below.
 Note that `path-to-xv6-riscv` refers to the path to your copy of xv6-riscv distribution on the host.
 ```
 $ cd path-to-xv6-riscv
-$ docker run -it --rm -v $(pwd):/home/xv6/xv6-riscv wtakuo/xv6-env
+$ docker run -it --rm -v $(pwd):/home/xv6/xv6-riscv sinasadeghi83/xv6-env
 ```
 The image supports multiple architectures (currently arm64 and amd64).
-If you need a container for a specific architecture, use [`wtakuo/xv6-env-arm64`](https://hub.docker.com/r/wtakuo/xv6-env-arm64) or [`wtakuo/xv6-env-amd64`](https://hub.docker.com/r/wtakuo/xv6-env-amd64) instead.
+If you need a container for a specific architecture, use [`sinasadeghi83/xv6-env-arm64`](https://hub.docker.com/r/sinasadeghi83/xv6-env-arm64) or [`sinasadeghi83/xv6-env-amd64`](https://hub.docker.com/r/sinasadeghi83/xv6-env-amd64) instead.
 
 If things go well, you should see the following output from the newly started container.
 ```
@@ -49,9 +49,9 @@ For your convenience, this docker image contains [opfs](https://github.com/titec
 ## To build the image by yourself
 If you want to build the docker image by yourself, you can use the following commands.
 ```
-$ git pull https://github.com/wtakuo/xv6-env.git
+$ git pull https://github.com/sinasadeghi83/xv6-env.git
 $ cd xv6-env
-$ docker build -t wtakuo/xv6-env .
+$ docker build -t sinasadeghi83/xv6-env .
 ```
 
 ## Note
