@@ -14,7 +14,7 @@ You can start a new container with the command below.
 Note that `path-to-xv6-riscv` refers to the path to your copy of xv6-riscv distribution on the host.
 ```
 $ cd path-to-xv6-riscv
-$ docker run -it --rm -v $(pwd):/home/xv6/xv6-riscv sinasadeghi83/xv6-env
+$ docker run -it --rm -v $(pwd):/home/xv6/xv6-riscv sinasadeghi83/xv6-env:buildx-latest
 ```
 The image supports multiple architectures (currently arm64 and amd64).
 If you need a container for a specific architecture, use [`sinasadeghi83/xv6-env-arm64`](https://hub.docker.com/r/sinasadeghi83/xv6-env-arm64) or [`sinasadeghi83/xv6-env-amd64`](https://hub.docker.com/r/sinasadeghi83/xv6-env-amd64) instead.
